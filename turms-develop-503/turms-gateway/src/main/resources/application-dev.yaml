@@ -1,0 +1,35 @@
+spring:
+  netty:
+    leak-detection: paranoid
+
+############################### Turms ###############################
+
+turms:
+  cluster:
+    connection:
+      server:
+        port-auto-increment: true
+    shared-config:
+      mongo:
+        uri: mongodb://localhost:27017/turms-config-dev
+  gateway:
+    client-api:
+      logging:
+        heartbeat-sample-rate: 1
+        included-notification-categories:
+          - category: all
+      return-reason-for-server-error: true
+    mongo:
+      admin:
+        uri: mongodb://localhost:27017/turms-dev
+      user:
+        uri: mongodb://localhost:27017/turms-dev
+    fake:
+      enabled: true
+  logging:
+    console:
+      enabled: true
+  plugin:
+    js:
+      debug:
+        enabled: true

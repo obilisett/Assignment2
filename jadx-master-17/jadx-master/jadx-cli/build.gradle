@@ -1,0 +1,31 @@
+plugins {
+	id 'application'
+}
+
+dependencies {
+	implementation(project(':jadx-core'))
+
+	runtimeOnly(project(':jadx-plugins:jadx-dex-input'))
+	runtimeOnly(project(':jadx-plugins:jadx-java-input'))
+	runtimeOnly(project(':jadx-plugins:jadx-java-convert'))
+	runtimeOnly(project(':jadx-plugins:jadx-smali-input'))
+	runtimeOnly(project(':jadx-plugins:jadx-script:jadx-script-plugin'))
+
+	implementation 'com.beust:jcommander:1.82'
+	implementation 'ch.qos.logback:logback-classic:1.4.7'
+}
+
+application {
+	applicationName = 'jadx'
+	mainClass.set('jadx.cli.JadxCLI')
+	applicationDefaultJvmArgs = ['-Xms128M', '-XX:MaxRAMPercentage=70.0', '-XX:+UseG1GC']
+}
+
+applicationDistribution.with {
+	into('') {
+		from '../.'
+		include 'README.md'
+		include 'NOTICE'
+		include 'LICENSE'
+	}
+}

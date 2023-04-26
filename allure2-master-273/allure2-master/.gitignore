@@ -1,0 +1,29 @@
+#IDEA Files
+.idea/*
+!.idea/vcs.xml
+!.idea/icon.png
+target
+*.iml
+*.ipr
+build
+schema
+.gradle
+
+out/
+
+#Eclipse files
+*.settings
+*.classpath
+*.project
+*.pydevproject
+
+#Node
+node_modules
+npm-debug.log
+
+#Other
+.repo
+cucumber-html-reports
+
+#Mac OS stuff
+.DS_Store
