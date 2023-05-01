@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="android/src/main/java"/>
+	<classpathentry kind="src" path="android/src/paper/java"/>
+	<classpathentry kind="src" path="Example/android/app/src/debug/java"/>
+	<classpathentry kind="src" path="Example/android/app/src/main/java"/>
+	<classpathentry kind="src" path="Example/android/app/src/release/java"/>
+	<classpathentry kind="src" path="FabricExample/android/app/src/debug/java"/>
+	<classpathentry kind="src" path="FabricExample/android/app/src/main/java"/>
+	<classpathentry kind="src" path="FabricExample/android/app/src/release/java"/>
+	<classpathentry kind="src" path="TestsExample/android/app/src/debug/java"/>
+	<classpathentry kind="src" path="TestsExample/android/app/src/main/java"/>
+	<classpathentry kind="src" path="TestsExample/android/app/src/release/java"/>
+	<classpathentry kind="lib" path="android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Example/android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="FabricExample/android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="TestsExample/android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
